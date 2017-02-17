@@ -1,4 +1,4 @@
-//! This is a file showing how comments are used
+//! Generate library docs for the enclosing item
 
 fn main() {
     // This is a line comment
@@ -8,7 +8,7 @@ fn main() {
     println!("x is {}", x); // should be 10
 }
 
-/// A human being is represented here
+/// Generate library docs for the following item
 pub struct Person {
 
 }
