@@ -48,9 +48,9 @@ struct Color {
 
 impl Display for Color {
     fn fmt(&self, f: &mut Formatter) -> fmt::Result {
-        write!(f, "RGB ({red}, {green}, {blue}) 0x{red:>02X}{green:>02X}{blue:>02X}",
+        write!(f, "RGB ({red}, {green}, {blue}) 0x{red:02X}{green:02X}{blue:02X}",
                 red=self.red, green=self.green, blue=self.blue)
-        // 0x{:>02X}{:>02X}{:>02X} pad with 2 zeroes (:>02) and convert to hex (X)
+        // 0x{:02X}{:02X}{:02X} pad with 2 zeroes (:02) and convert to hex (X)
     }
 }
 
