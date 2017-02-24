@@ -23,11 +23,7 @@ mod my {
             }
         }
     }
-
-    impl print() {
-        println!("{}", contents);
-    }
-} //
+}
 
 fn main() {
     // Public structs with public fields can be constructed as usual
