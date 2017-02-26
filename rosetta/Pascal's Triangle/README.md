@@ -16,11 +16,11 @@ where each element of each row is either 1 or the sum of the two elements right 
 
 For example, the next row of the triangle would be:
 
-  1   (since the first element of each row doesn't have two elements above it)
-  4   (1 + 3)
-  6   (3 + 3)
-  4   (3 + 1)
-  1   (since the last element of each row doesn't have two elements above it)
+- 1   (since the first element of each row doesn't have two elements above it)
+- 4   (1 + 3)
+- 6   (3 + 3)
+- 4   (3 + 1)
+- 1   (since the last element of each row doesn't have two elements above it)
 
 So the triangle now looks like this:
 
