@@ -9,7 +9,7 @@ impl Block {
         Block{ letter_one: letter_one, letter_two: letter_two, used: false}
     }
 
-    fn has(&self, letter: char) -> bool {
+    fn available(&self, letter: char) -> bool {
         if !self.used {
             if self.letter_one == letter || self.letter_two == letter {
                 return true
@@ -40,7 +40,7 @@ fn can_make_word(string: &str, blocks: &mut Vec<Block>) -> bool {
     for c in string.chars() {
         let mut pass = false;
         for block in blocks.iter_mut() {
-            if block.has(c) {
+            if block.available(c) {
                 block.used = true;
                 pass = true;
                 break;
