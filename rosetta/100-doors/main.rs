@@ -1,4 +1,3 @@
-#[allow(dead_code)]
 enum Door {
     Open,
     Closed
