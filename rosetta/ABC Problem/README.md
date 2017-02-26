@@ -40,3 +40,9 @@ The rules are simple:
 1. Once a letter on a block is used that block cannot be used again
 2. The function should be case-insensitive
 3. Show the output on this page for the following 7 words in the following example
+
+##Implementation Usage
+Compile 'main.rs' and run ./main with arguments
+
+Example:
+`./main.exe A BARK BOOK TREAT COMMON SQUAD CONFUSE`
