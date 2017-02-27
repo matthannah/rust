@@ -1,3 +1,9 @@
-// Compiled rust files
-*.exe
-*.pdb
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.rs
+!*.md
+
+# Unignore all dirs
+!*/
