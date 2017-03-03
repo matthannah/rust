@@ -101,19 +101,15 @@ fn main() {
 fn get_user_input(valid_input: Vec<usize>) -> usize {
     use std::io::Write;
 
-    let mut input = 0;
-    let mut s = String::new();
-
-    print!("Please enter a valid move {:?}: ", valid_input);
-    let _ = std::io::stdout().flush();
-    std::io::stdin().read_line(&mut s).expect("failed to read from stdin");
-    let trimmed = s.trim();
-    match trimmed.parse::<usize>() {
-        Ok(i)  => { input = i; },
-        Err(_) => {}
-    };
-
-    if !valid_input.iter().any(|e| *e == input) { get_user_input(valid_input); }
-
-    input
+    loop {
+        let mut s = String::new();
+        print!("Please enter a valid move {:?}: ", valid_input);
+        let _ = std::io::stdout().flush();
+        std::io::stdin().read_line(&mut s).expect("failed to read from stdin");
+        let trimmed = s.trim();
+        match trimmed.parse::<usize>() {
+            Ok(i)  => { if valid_input.iter().any(|e| *e == i) { return i; } },
+            Err(_) => {}
+        };
+    }
 }
