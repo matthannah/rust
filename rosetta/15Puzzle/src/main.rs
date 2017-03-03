@@ -8,15 +8,21 @@ struct Puzzle {
 
 impl Puzzle {
     fn new() -> Puzzle {
+        let mut puzzle_tiles: [[usize; 4]; 4] = [[0; 4]; 4];
         let mut rng = rand::thread_rng();
-        let mut puzzle = Puzzle { tiles: [[1,   2,  3,  4],
-                                          [5,   6,  7,  8],
-                                          [9,  10, 11, 12],
-                                          [13, 14, 15,  0]]};
+        let mut shuffled_tiles: [usize; 16] = [ 1,  2,  3,  4,
+                                                5,  6,  7,  8,
+                                                9, 10, 11, 12,
+                                               13, 14, 15,  0];
+        rng.shuffle(&mut shuffled_tiles);
 
-        rng.shuffle(&mut puzzle.tiles);
+        for row in 0 .. 4 {
+            for col in 0 .. 4 {
+                puzzle_tiles[row][col] = shuffled_tiles[(row * 4) + col];
+            }
+        }
 
-        puzzle
+        Puzzle { tiles: puzzle_tiles }
     }
 
     fn move_tile(&mut self, tile: usize) {
