@@ -17,7 +17,7 @@ struct Ref<'a, T: 'a>(&'a T);
 // *references* in `T` must outlive `'a`. Additionally, the lifetime
 // of `Ref` may not exceed `'a`.
 
-// A generic function which prints using the `Debug` trait.
+// A gene9ric function which prints using the `Debug` trait.
 fn print<T>(t: T) where
     T: Debug {
     println!("`print`: t is {:?}", t);
