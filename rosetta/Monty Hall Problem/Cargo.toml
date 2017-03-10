@@ -1,0 +1,6 @@
+[package]
+name = "monty_hall_problem"
+version = "0.1.0"
+authors = ["matthannah <mryanhannah@gmail.com>"]
+
+[dependencies]
