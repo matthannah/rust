@@ -24,7 +24,7 @@ fn monty_hall_problem(rng: &mut rand::ThreadRng, switch_door: bool) -> bool {
 
     if switch_door {
         for i in 0 .. 3 {
-            if i != door && i != goat_door { door = i; }
+            if i != door && i != goat_door { door = i; break; }
         }
     }
 
