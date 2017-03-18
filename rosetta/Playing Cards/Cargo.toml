@@ -1,0 +1,6 @@
+[package]
+name = "playing_cards"
+version = "0.1.0"
+authors = ["matthannah <mryanhannah@gmail.com>"]
+
+[dependencies]
