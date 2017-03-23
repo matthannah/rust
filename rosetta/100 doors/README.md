@@ -1,4 +1,4 @@
-#100 doors
+# 100 doors
 
 ## Problem
 There are 100 doors in a row that are all initially closed.

@@ -1,4 +1,4 @@
-#15Puzzle
+# 15Puzzle
 
-##Task
+## Task
 Implement the 15 puzzle game

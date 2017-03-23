@@ -31,7 +31,7 @@ The sample collection of blocks:
 (P C)
 (Z M)
 ```
-##Task
+## Task
 Write a function that takes a string (word) and determines whether the word can be spelled with the given collection of blocks.
 
 
@@ -41,7 +41,7 @@ The rules are simple:
 2. The function should be case-insensitive
 3. Show the output on this page for the following 7 words in the following example
 
-##Implementation Usage
+## Implementation Usage
 Compile 'main.rs' and run ./main with arguments
 
 Example:
